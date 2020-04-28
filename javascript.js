@@ -35,10 +35,29 @@ function updateScore(e) {
     if (playRound(e.target.id, computerPlay() ) == 'loss') {
         computerScore += 1;
         document.getElementById("computerScore").innerHTML = computerScore;
+        document.getElementById("result").innerHTML = "Computer Wins.";
+        if (computerScore == 5) {
+            alert("Computer Wins!");
+            computerScore = 0;
+            playerScore = 0;
+            document.getElementById("playerScore").innerHTML = playerScore;
+            document.getElementById("computerScore").innerHTML = computerScore;
+        }
     }
     else if (playRound(e.target.id, computerPlay() ) == 'win') {
         playerScore += 1;
         document.getElementById("playerScore").innerHTML = playerScore;
+        document.getElementById("result").innerHTML = "Player Wins.";
+        if (playerScore == 5) {
+            alert("Player Wins!");
+            computerScore = 0;
+            playerScore = 0;
+            document.getElementById("playerScore").innerHTML = playerScore;
+            document.getElementById("computerScore").innerHTML = computerScore;
+        }
+    }
+    else {
+        document.getElementById("result").innerHTML = "It's a tie.";
     }
 }
 

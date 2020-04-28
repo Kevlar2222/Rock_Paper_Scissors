@@ -1,15 +1,35 @@
 button {
     background-color: orange;
     color: white;
-    font-size: 10rem;
+    font-size: 8rem;
     text-align: center;
     border: 10px solid blue;
+    width: 33%;
 }
 
-div {
-    width: 49%;
+div.split {
+    width: 49.5%;
     background-color: orchid;
     color: purple;
     display: inline-block;
     font-size: 4rem;
+    text-align: center;
+}
+
+div.bottom {
+    width: 100%;
+}
+
+div.result {
+    background-color: lightgrey;
+    width: 99%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#result {
+    font-size: 4rem;
+    color: darkgreen;
+    text-align: center;
 }
