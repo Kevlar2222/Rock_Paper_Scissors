@@ -1,0 +1,15 @@
+button {
+    background-color: orange;
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+    border: 10px solid blue;
+}
+
+div {
+    width: 49%;
+    background-color: orchid;
+    color: purple;
+    display: inline-block;
+    font-size: 4rem;
+}

@@ -1,30 +1,26 @@
-<script>
-    function computerPlay (){
-        let computerChoice;
-        let choice = 1 + (Math.random() * (3))
-        if (choice < 2) {
-            computerChoice = 'rock';
-        }
-        else if (choice <= 3) {
-            computerChoice = 'paper';
-        }
-        else {
-            computerChoice = 'scissors';
-        }
-        return computerChoice;
-    }
-    function playRound(playerSelection, computerSelection) {
-        if (computerSelection == 'rock') {
-            return 'tie';
-        }
-        else if (computerSelection == 'paper') {
-            return 'loss';
-        }
-        else {return 'win'}
-    }
-
-    const playerSelection = 'rock'
-    const computerSelection = computerPlay()
-    console.log(playRound(playerSelection, computerSelection))
-
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+      <button id="rock">Rock</button>
+      <button id="scissors">Scissors</button>
+      <button id="paper">Paper</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+        <p>Computer Score: <span id = "computerScore">0</span></p>
+      </div>
+      <div>
+          <p>Player Score: <span id = "playerScore">0</span></p>
+      </div>
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
